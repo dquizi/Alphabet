@@ -3,20 +3,45 @@
 	&-block
 		display: flex
 		justify-content: space-between
-		align-items: center				
+		align-items: center
+	&-contacts
+		display: flex
+		flex-direction: column
+		// border: 1px solid #000
+		// max-height: 40px				
 	&__info
 		display: flex
 		align-items: center
 		text-align: right
+		// border: 1px solid #000
 	&__address
 		display: flex
-		flex-direction: column
+		justify-content: flex-end
+		min-height: 13px
+		font-size: 13px
+		font-weight: 400
+		// border: 1px solid #000
 	&__button
+		min-width: 170px
 		margin-left: 30px
+		font-size: 13px
+		font-weight: 400		
 	&__phone
 		display: inline-block
 		color: $text-color
 		font-size: 20px
 		font-weight: 400
 		text-decoration: none
-		margin-top: 10px
+		// margin-top: 10px
+@media (max-width: 768px)
+	.navbar
+		&__contacts
+			display: none
+		&__button
+			font-size: 12px
+			padding: 15px 26px
+		&__logo
+			width: 90px
+// @media (max-width: 480px)
+// 	.navbar
+
