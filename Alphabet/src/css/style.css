@@ -155,8 +155,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding-right: 55px;
 }
 
