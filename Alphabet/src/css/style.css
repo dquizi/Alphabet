@@ -36,7 +36,7 @@ img {
 
 @media (max-width: 320px) {
   .container {
-    width: 280px;
+    max-width: 280px;
   }
 }
 
@@ -121,6 +121,16 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar__button {
+    font-size: 10px;
+    min-width: 142px;
+  }
+  .button {
+    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
