@@ -64,7 +64,7 @@ img {
           align-items: center;
 }
 
-.navbar-contacts {
+.navbar__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,10 +78,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: right;
+  margin-bottom: 5px;
 }
 
 .navbar__address {
@@ -94,6 +92,7 @@ img {
   min-height: 13px;
   font-size: 13px;
   font-weight: 400;
+  margin-top: 2px;
 }
 
 .navbar__button {
@@ -109,6 +108,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+  margin-top: 8px;
 }
 
 @media (max-width: 768px) {
