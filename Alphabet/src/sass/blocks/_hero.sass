@@ -1,25 +1,29 @@
 .hero
-	padding: 50px 0
+	padding: 44px 0
+	background-color: #f5f5f5
 	&-block
 		display: flex
 	&-image
 		display: flex
 		justify-content: flex-end
+		margin-right: -38px
 	&-text
-		flex-basis: 50%
+		flex-basis: 46%
 		padding-right: 55px
 		&__title
-			font-size: 41px
-			font-weight: 800
+			+bold
+			margin-top: 31px
+			margin-bottom: 39px
+			margin-left: -4px
+			font-size: 41px			
 			line-height: 55px
-      margin-bottom: 35px
-      font-family: 'Museo Sans Light'
 		&__subtitle
+			+bold
 			display: inline-block
 			font-size: 20px
-			font-weight: 500
 			margin-bottom: 70px
 	&-list
+		+reg
 		margin: 0
 		padding: 0
 		&__item
@@ -27,8 +31,8 @@
 			align-items: center
 			margin-bottom: 25px
 		&__image
-			width: 40px
-			height: 40px
+			width: 35px
+			height: 35px
 			border: 2px solid $main-color
 			display: flex
 			align-items: center
@@ -36,7 +40,9 @@
 			border-radius: 50%
 			margin-right: 30px
 		&__text
-			max-width: 300px
+			max-width: 250px
+			font-size: 14px
+			line-height: 24px
 @media (max-width: 1200px)
 	.hero
 		&-block
@@ -62,3 +68,23 @@
 				font-size: 12px
 			&__image
 				margin-right: 15px
+@media (max-width: 320px)
+	.hero
+		padding: 9px 0
+		&-block
+			flex-direction: column
+		&-text
+			&__title
+				line-height: 1.2
+				margin: 34px -10px 5px 3px				
+			&__subtitle	
+				margin-top: 2px			
+				margin-left: 5px
+		&-list
+			&__text
+				line-height: 1.2
+		&-image
+			max-width: 291px
+			max-height: 253px
+			margin-top: -7px
+				

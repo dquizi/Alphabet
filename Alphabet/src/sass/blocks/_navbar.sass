@@ -17,18 +17,19 @@
 		min-height: 13px
 		font-size: 13px
 		font-weight: 400
-		margin-top: 2px
+		margin-top: 3px
 	&__button
+		+bold
 		min-width: 170px
 		margin-left: 30px
-		font-size: 13px
-		font-weight: 400
+		font-size: 13px		
 	&__phone
+		+bold
 		display: inline-block
 		color: $text-color
-		font-size: 20px
+		font-size: 20px		
 		text-decoration: none
-		margin-top: 8px
+		margin-top: 7px
 @media (max-width: 768px)
 	.navbar
 		&__contacts
@@ -40,8 +41,11 @@
 			width: 90px
 @media (max-width: 320px)
 	.navbar
+		padding: 14px 0
 		&__button
 			font-size: 10px
-			min-width: 142px
+			min-width: 137px
+			padding: 14px 0
+			margin-right: 4px
 	.button
 		border-radius: 5px
