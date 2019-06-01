@@ -413,6 +413,10 @@ img {
   line-height: 1.6;
 }
 
+.offer__input:focus {
+  outline-color: orange;
+}
+
 .offer__input:first-child {
   margin-right: 10px;
 }
