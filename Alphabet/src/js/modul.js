@@ -1,13 +1,18 @@
-$(document).ready(function() {
-	var button = $('#button');
-	var modal = $('#modal');
-	var close = $('#close');
+$(document).ready(function () {
 
-	button.on('click', function() {
-		modal.addClass('modal_active');
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
 	});
 
-	close.on('click', function() {
-		modal.removeClass('modal_active');
+	$('.scrollup').click(function () {
+		$("html, body").animate({
+			scrollTop: 0
+		}, 600);
+		return false;
 	});
+
 });
