@@ -1,0 +1,26 @@
+.under
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 25px
+	&-block
+		flex-basis: 50%
+		max-width: 100%
+		margin-right: 25px
+		&:first-child
+			margin-left: -3px
+		&:last-child
+			max-width: 201px
+			margin-right: 0
+		&__contacts
+			display: flex
+@media (max-width: 320px)
+	.under
+		flex-direction: column
+		align-items: flex-start
+		margin-left: 9px
+		&-block
+			&:last-child
+				margin-left: -3px
+				margin-top: 7px
+	 

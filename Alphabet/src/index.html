@@ -22,7 +22,7 @@
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-3251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
-          <button class="button navbar__button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -54,8 +54,7 @@
                 <div class="hero-list__image">
                   <img src="img/hero/calculator.png" alt="calculator">
                 </div>
-                <span class="hero-list__text">Рассчитаем смету на работы
-                и материалы в день обращения</span>
+                <span class="hero-list__text">Рассчитаем смету на работы <br> и материалы в день обращения</span>
               </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
@@ -77,7 +76,57 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
+    <section class="offer section">      
+      <div class="container">
+        <div class="offer-block">
+          <h2 class="section-title offer__title">
+            Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+          </h2>
+          <!-- /.section-title -->
+          <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+          <!-- /.section-subtitle -->
+          <form action="#" class="form offer__form">
+            <input type="text" class="input offer__input" placeholder="Ваше имя">
+            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+          </form>
+          <div class="under">
+            <div class="under-block">
+              <span class="subtext">Наш менеджер перезвонит Вам <br> в течение 60 секунд</span>
+            </div>
+            <div class="under-block">
+              <div class="__contacts">
+                <span class="subtext">или перезвоните нам сами</span>
+                <div class="main-phone">
+                  <span class="phone">+7 (495) 42-251-31</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
   </main>
 
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal-dialog__title">
+        Всплывающее окно
+      </h4>      
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/modul.js"></script>
+  
+  <div class="scrollup"></div>
+  
 </body>
 </html>
