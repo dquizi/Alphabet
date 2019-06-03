@@ -1,26 +1,37 @@
 .under
 	display: flex
 	justify-content: space-between
-	align-items: center
-	margin-top: 25px
+	margin-top: 24px
 	&-block
 		flex-basis: 50%
 		max-width: 100%
 		margin-right: 25px
+		&__subtext
+			margin-left: -1px
+			font-size: 15px
+			line-height: 24px
 		&:first-child
-			margin-left: -3px
+			margin-left: -1px
 		&:last-child
 			max-width: 201px
 			margin-right: 0
-		&__contacts
-			display: flex
+	&-contacts
+		margin-right: 9px
+		&__subtext
+			display: block
+			font-size: 15px
+			line-height: 24px
+		&__phone
+			+bold
+			font-size: 15px
+			line-height: 24px
+
 @media (max-width: 320px)
 	.under
 		flex-direction: column
 		align-items: flex-start
-		margin-left: 9px
-		&-block
-			&:last-child
-				margin-left: -3px
-				margin-top: 7px
-	 
+		margin-left: 8px
+		&-contacts
+			margin-left: -3px
+			margin-top: 6px
+
