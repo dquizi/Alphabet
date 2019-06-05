@@ -10,3 +10,25 @@ button.addEventListener('click', () => {
 });
 
 close.addEventListener('click', closeModal);
+
+/* Анимация при скролле */
+var anim = document.querySelector('.offer__input');
+$(document).ready(function () {
+	$(document).bind("scroll", function () {
+		$(".scroll-appear").each(function () {
+			var position = $(this).offset().top;
+			var classToBeAdded = document.querySelector('.box');
+
+			if (position + 150 < $(window).scrollTop() + $(window).height()) {
+				$(this).addClass(classToBeAdded);
+			}
+
+
+			if (position + $(this).height() + 600 < $(window).scrollTop() + $(window).height()) {
+				$(this).removeClass(classToBeAdded);
+			}
+
+
+		});
+	});
+});
