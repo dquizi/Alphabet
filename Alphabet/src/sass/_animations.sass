@@ -1,11 +1,12 @@
-@keyframes anim
-from
-	margin-left: 0
-to
-	margin-left: 10px
+@keyframes animationOne
+	from
+		border-radius: 10px
+	50%
+		border-radius: 50%
+		border: 3px solid green
+	to
+		border-radius: 10px
 
 .box
-	width: 100px
-	height: 100px
-	border: 1px solid #000
-	animation: anim 0.5 timing-function delay iteration-count direction fill-mode
+	animation-name: animationOne
+	animation-duration: 5s
