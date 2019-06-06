@@ -317,8 +317,8 @@
       ),
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка'
+        hintContent: 'Мы здесь',
+        balloonContent: 'Метка'
       }, {
       // Опции.
       // Необходимо указать данный тип макета.
@@ -326,15 +326,14 @@
       // Своё изображение иконки метки.
       iconImageHref: 'images/myIcon.gif',
       // Размеры метки.
-      iconImageSize: [30, 42],
+      iconImageSize: [30, 30],
       // Смещение левого верхнего угла иконки относительно
       // её "ножки" (точки привязки).
-      iconImageOffset: [-5, -38]
+      iconImageOffset: [0, -30]
       }),
 
       myPlacemarkWithContent = new ymaps.Placemark([55.611409, 37.201122], {
-        hintContent: 'Собственный значок метки с контентом',
-        balloonContent: 'А эта — новогодняя',
+        hintContent: 'Мы здесь',
         iconContent: '12'
       }, {
       // Опции.
@@ -376,6 +375,8 @@
           email: true
         }
       },
+      errorClass: "invalid",
+      errorContainer: "div",
       messages: {
         username: {
           required: "Заполните поле",
