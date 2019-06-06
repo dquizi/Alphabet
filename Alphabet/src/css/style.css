@@ -137,6 +137,10 @@ img {
   border-radius: 10px;
 }
 
+.bold {
+  font-weight: 900;
+}
+
 @-webkit-keyframes animationOne {
   from {
     border-radius: 10px;
@@ -971,6 +975,79 @@ img {
 
 .add-3 {
   margin-top: 8px;
+}
+
+/*Стили для блока footer*/
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 3px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 92px;
+  margin-left: 12px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+  margin-top: 4px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 38px;
+  line-height: 26px;
+}
+
+.contacts-list__text {
+  margin-top: -3px;
+  font-size: 16px;
+}
+
+.foot-one {
+  margin-top: -5px;
+  margin-bottom: 32px;
 }
 
 /*Стили для модального окна*/
