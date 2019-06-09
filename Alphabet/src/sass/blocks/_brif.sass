@@ -17,7 +17,8 @@
 	&__input
 		width: 100%
 		max-width: 370px
-		margin-bottom: 15px
+		margin-top: 7.5px
+		margin-bottom: 7.5px
 		line-height: 23px
 	&__button
 		height: 70px
@@ -68,12 +69,15 @@
 		+bold
 	&__subtitle
 		display: block
-		margin-bottom: 48px
+		margin-bottom: 40.5px
 		font-size: 16px
 	&__description
 		display: block
 @media (max-width: 1200px)
 	.brif
+		background-size: 50%, cover
+		&-block
+			flex-basis: 50%
 		&__form
 			padding-left: 30px
 	.interview
@@ -81,6 +85,7 @@
 		&__title
 			font-size: 20px
 			margin-bottom: 15px
+			max-width: 400px
 		&__subtitle
 			margin-bottom: 30px
 		&-list
@@ -106,6 +111,11 @@
 		&__form
 			margin-top: 80px
 
+@media (max-width: 320px)
+	.brif
+		.interview
+			&__title
+				max-width: 250px
 .add
 	margin-top: 10px
 	&-2
@@ -113,10 +123,14 @@
 	&-3
 		margin-top: 8px
 
-.invalid
+.invalid, .invalid-2
 	border: 1px solid red
 
 #username, #phone, #email
 	&-error
 		&invalid
 		border: none
+
+#brif-form
+	position: relative
+
