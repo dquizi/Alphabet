@@ -1,0 +1,95 @@
+.inexpensive
+	margin-top: -86px
+	&-main
+		width: 100%
+		background-color: $main-color
+		display: flex
+		justify-content: center
+		padding: 91px
+		text-align: center
+	&-title
+		font-size: 32px
+		line-height: 50px
+		text-align: center
+		font-weight: 400
+		max-width: 950px
+		margin-top: -2px
+		margin-left: -5px
+	&-images
+		display: flex
+		margin-top: 100px
+		justify-content: center
+		&__item
+			background-color: #f7f7f7
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+		&__man
+			display: flex
+			align-items: flex-end
+			max-height: 260px
+		&__text
+			padding-top: 23px
+			padding-left: 26px
+			padding-bottom: 61px
+		&__subtitle
+			font-size: 16px
+			line-height: 23px
+
+.add-width-1
+	max-width: 290px
+.add-width-2
+	max-width: 310px
+.add-width-3
+	max-width: 310px
+
+@media (max-width: 1200px)
+	.inexpensive
+		&-images
+			&__item
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+			&__text
+				padding-right: 26px
+@media (max-width: 768px)
+	.inexpensive
+		&-images
+			flex-direction: column
+			&__item
+				margin-bottom: 15px
+				align-items: center
+				&:last-child
+					margin-right: 30px
+			&__text
+				padding: 25px
+@media (max-width: 320px)
+	.inexpensive
+		&-main
+			padding: 72px 32px 76px
+		&-title
+			font-size: 18px
+			line-height: 22px
+			margin-left: -1px
+		&-images
+			margin-top: 59px
+			margin-right: 0
+			max-width: 275px
+			&__item
+				margin-right: 0
+				margin-bottom: 30px
+				&:last-child
+					margin-right: 0
+			&__text
+				padding-top: 13px
+				padding-right: 15px
+				padding-left: 0
+				padding-bottom: 35px
+				max-width: 227px
+			&__subtitle
+				font-size: 12px
+				line-height: 16px
+	.add-width-2
+		padding-bottom: 20px
+	.add-width-3
+		padding-bottom: 36px
