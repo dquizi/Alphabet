@@ -73,6 +73,14 @@
 		font-size: 16px
 	&__description
 		display: block
+
+.add
+	margin-top: 10px
+	&-2
+		margin-top: 13px
+	&-3
+		margin-top: 8px
+
 @media (max-width: 1200px)
 	.brif
 		background-size: 50%, cover
@@ -100,6 +108,7 @@
 			margin-bottom: 15px
 		&__subtitle
 			margin-bottom: 30px
+
 @media (max-width: 768px)
 	.brif
 		background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
@@ -113,15 +122,32 @@
 
 @media (max-width: 320px)
 	.brif
-		.interview
-			&__title
-				max-width: 250px
-.add
-	margin-top: 10px
-	&-2
-		margin-top: 13px
-	&-3
-		margin-top: 8px
+		&-block
+			margin-top: -47px
+	.interview
+		&__title
+			max-width: 250px
+			font-size: 18px
+			line-height: 22px
+			margin-left: 2px
+		&__subtitle
+			font-size: 14px
+			line-height: 16px
+			margin-left: 3px
+			max-width: 180px
+			margin-bottom: 38px
+		&-list
+			&__item
+				width: 300px
+				&:nth-child(3)
+					margin-top: -10px
+			&__counter
+				margin-right: 9px
+
+	.add
+		width: 185px
+		margin-top: 10px
+		margin-bottom: -12px
 
 .invalid, .invalid-2
 	border: 1px solid red

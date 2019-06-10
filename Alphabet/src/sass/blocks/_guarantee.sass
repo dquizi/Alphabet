@@ -1,0 +1,80 @@
+.guarantee
+	margin-top: -47px
+	margin-bottom: 149px
+	&-main
+		display: flex
+		justify-content: center
+		margin-bottom: 92px
+		text-align: center
+		&__title
+			+bold
+			max-width: 650px
+			font-size: 30px
+			line-height: 45px
+	&-images
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		&__image
+			margin-bottom: 33px
+		&__item
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-right: 119px
+			&:last-child
+				margin-right: 0
+	&-item
+		&__text
+			max-width: 290px
+			display: flex
+			justify-content: center
+			text-align: center
+			margin-left: 26px
+			margin-right: -2px
+		&__subtitle
+			font-size: 18px
+			line-height: 24px
+			margin-left: -22px
+			text-align: center
+			&:last-child
+				margin-left: -24px
+
+@media (max-width: 1200px)
+	.guarantee
+		&-images
+			flex-direction: column
+			align-items: center
+			&__item
+				margin-right: 0
+		&-item
+			&__text
+				margin-bottom: 30px
+
+@media (max-width: 320px)
+	.guarantee
+		margin-top: -136px
+		margin-bottom: -48px
+		&-main
+			margin-bottom: 48px
+			&__title
+				font-size: 18px
+				line-height: 22px
+				max-width: 250px
+		&-images
+			flex-direction: column
+			align-items: center
+			&__image
+				margin-bottom: 30px
+			&__item
+				margin-right: 0
+		&-item
+			&__text
+				margin-top: -4px
+				margin-bottom: 45px
+				margin-left: 22px
+			&__subtitle
+				font-size: 14px
+				line-height: 16px
+
+

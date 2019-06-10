@@ -709,27 +709,6 @@ input.invalid-1 {
   margin: auto;
 }
 
-@media (max-width: 320px) {
-  .portfolio__title {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: -31px;
-    margin-bottom: 24px;
-  }
-  .portfolio .portfolio__arrows {
-    margin-top: 28px;
-    margin-bottom: -30px;
-  }
-  .portfolio .slider__item {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .portfolio .slider__image {
-    max-height: 221px;
-    padding: 17px;
-  }
-}
-
 .owl-nav {
   max-width: 120px;
   margin: 68px auto 7px;
@@ -743,6 +722,33 @@ input.invalid-1 {
 
 .owl-item img {
   max-width: 370px;
+}
+
+@media (max-width: 320px) {
+  .portfolio__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -31px;
+    margin-bottom: 40px;
+  }
+  .portfolio .portfolio__arrows {
+    margin-top: 28px;
+    margin-bottom: -30px;
+  }
+  .portfolio .slider__item {
+    margin-left: 15px;
+    margin-right: 19px;
+  }
+  .portfolio .slider__image {
+    max-height: 221px;
+  }
+  .portfolio .owl-item img {
+    height: 187px;
+  }
+  .portfolio .owl-nav {
+    margin-top: 46px;
+    margin-bottom: -30px;
+  }
 }
 
 /*Стили для блока с ценами*/
@@ -874,12 +880,25 @@ input.invalid-1 {
     font-size: 14px;
     margin-left: -16px;
   }
+  .card__text {
+    padding-top: 34px;
+    padding-bottom: 26px;
+  }
   .card__title {
     font-size: 14px;
     width: 200px;
+    margin-bottom: 12px;
+    margin-top: -10px;
   }
   .card__image {
-    width: 269px;
+    max-width: 280px;
+  }
+  .card__link {
+    margin-left: -7px;
+  }
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1002,6 +1021,18 @@ input.invalid-1 {
   display: block;
 }
 
+.add {
+  margin-top: 10px;
+}
+
+.add-2 {
+  margin-top: 13px;
+}
+
+.add-3 {
+  margin-top: 8px;
+}
+
 @media (max-width: 1200px) {
   .brif {
     background-size: 50%, cover;
@@ -1059,21 +1090,36 @@ input.invalid-1 {
 }
 
 @media (max-width: 320px) {
-  .brif .interview__title {
-    max-width: 250px;
+  .brif-block {
+    margin-top: -47px;
   }
-}
-
-.add {
-  margin-top: 10px;
-}
-
-.add-2 {
-  margin-top: 13px;
-}
-
-.add-3 {
-  margin-top: 8px;
+  .interview__title {
+    max-width: 250px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 2px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 3px;
+    max-width: 180px;
+    margin-bottom: 38px;
+  }
+  .interview-list__item {
+    width: 300px;
+  }
+  .interview-list__item:nth-child(3) {
+    margin-top: -10px;
+  }
+  .interview-list__counter {
+    margin-right: 9px;
+  }
+  .add {
+    width: 185px;
+    margin-top: 10px;
+    margin-bottom: -12px;
+  }
 }
 
 .invalid, .invalid-2 {
@@ -1191,6 +1237,9 @@ input.invalid-1 {
 }
 
 @media (max-width: 320px) {
+  .steps {
+    margin-top: -158px;
+  }
   .steps-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1356,6 +1405,9 @@ input.invalid-1 {
 }
 
 @media (max-width: 320px) {
+  .inexpensive {
+    margin-top: -123px;
+  }
   .inexpensive-main {
     padding: 72px 32px 76px;
   }
@@ -1392,6 +1444,146 @@ input.invalid-1 {
   }
   .add-width-3 {
     padding-bottom: 36px;
+  }
+}
+
+/*Стили для блока guarantee*/
+.guarantee {
+  margin-top: -47px;
+  margin-bottom: 149px;
+}
+
+.guarantee-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 92px;
+  text-align: center;
+}
+
+.guarantee-main__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  max-width: 650px;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.guarantee-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.guarantee-images__image {
+  margin-bottom: 33px;
+}
+
+.guarantee-images__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 119px;
+}
+
+.guarantee-images__item:last-child {
+  margin-right: 0;
+}
+
+.guarantee-item__text {
+  max-width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-left: 26px;
+  margin-right: -2px;
+}
+
+.guarantee-item__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: -22px;
+  text-align: center;
+}
+
+.guarantee-item__subtitle:last-child {
+  margin-left: -24px;
+}
+
+@media (max-width: 1200px) {
+  .guarantee-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guarantee-images__item {
+    margin-right: 0;
+  }
+  .guarantee-item__text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .guarantee {
+    margin-top: -136px;
+    margin-bottom: -48px;
+  }
+  .guarantee-main {
+    margin-bottom: 48px;
+  }
+  .guarantee-main__title {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 250px;
+  }
+  .guarantee-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guarantee-images__image {
+    margin-bottom: 30px;
+  }
+  .guarantee-images__item {
+    margin-right: 0;
+  }
+  .guarantee-item__text {
+    margin-top: -4px;
+    margin-bottom: 45px;
+    margin-left: 22px;
+  }
+  .guarantee-item__subtitle {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
