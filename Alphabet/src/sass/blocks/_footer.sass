@@ -42,3 +42,31 @@
 	margin-top: -5px
 	margin-bottom: 32px
 
+@media (max-width: 320px)
+	footer
+		margin-top: 51px
+		display: flex
+		flex-direction: column
+	.map
+		width: 100%
+		position: static
+		order: 1
+		max-height: 665px
+		height: 100%
+	ymaps
+		height: 665px
+	.contacts
+		flex-basis: 100%
+		padding-left: 0
+		&-block
+			margin-left: -9px
+			margin-bottom: 20px
+		&__title
+			font-size: 18px
+			line-height: 22px
+			margin-bottom: 34px
+		&-list
+			&__icon
+				margin-right: 12px
+
+

@@ -348,6 +348,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -356,6 +357,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -1514,6 +1516,7 @@ input.invalid-1 {
 
 .owl-item img {
   max-width: 370px;
+  height: 280px;
 }
 
 @media (max-width: 320px) {
@@ -1701,7 +1704,7 @@ input.invalid-1 {
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
   margin-top: -12px;
-  padding-bottom: 58px;
+  padding-bottom: 21px;
 }
 
 .brif-block {
@@ -1865,7 +1868,7 @@ input.invalid-1 {
 
 @media (max-width: 768px) {
   .brif {
-    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg-pro.jpg");
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
@@ -1878,12 +1881,24 @@ input.invalid-1 {
   }
   .brif__form {
     margin-top: 80px;
+    padding-left: 0;
   }
 }
 
 @media (max-width: 320px) {
+  .brif__form {
+    margin-top: 52px;
+  }
   .brif-block {
     margin-top: -47px;
+    margin-bottom: -73px;
+  }
+  .brif__input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .interview {
+    margin-bottom: 53px;
   }
   .interview__title {
     max-width: 250px;
@@ -1897,6 +1912,7 @@ input.invalid-1 {
     margin-left: 3px;
     max-width: 180px;
     margin-bottom: 38px;
+    margin-top: 22px;
   }
   .interview-list__item {
     width: 300px;
@@ -1906,6 +1922,19 @@ input.invalid-1 {
   }
   .interview-list__counter {
     margin-right: 9px;
+  }
+  .form__title {
+    font-size: 18px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    margin-top: 21px;
+  }
+  .form__description {
+    width: 160px;
+    font-size: 14px;
+    margin-left: 60px;
+    line-height: 24px;
   }
   .add {
     width: 185px;
@@ -2451,6 +2480,48 @@ input.invalid-1 {
 .foot-one {
   margin-top: -5px;
   margin-bottom: 32px;
+}
+
+@media (max-width: 320px) {
+  footer {
+    margin-top: 51px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map {
+    width: 100%;
+    position: static;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-height: 665px;
+    height: 100%;
+  }
+  ymaps {
+    height: 665px;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 0;
+  }
+  .contacts-block {
+    margin-left: -9px;
+    margin-bottom: 20px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 34px;
+  }
+  .contacts-list__icon {
+    margin-right: 12px;
+  }
 }
 
 /*Стили для модального окна*/
