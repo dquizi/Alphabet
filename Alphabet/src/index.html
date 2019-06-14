@@ -65,7 +65,7 @@
           </div>
           <!-- /.hero-text -->
           <div class="hero-image">
-            <img src="img/hero/hero-image.png" alt="План квартиры">
+            <img src="img/hero/hero-image.jpg" alt="План квартиры">
           </div>
           <!-- /.hero-image -->
         </div>
@@ -86,7 +86,7 @@
           <!-- /.section-subtitle -->
           <form action="#" id="offer-form" class="form offer__form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="input offer__input" placeholder="Ваш телефон">
+            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <div class="under">
@@ -95,7 +95,7 @@
             </div>
             <div class="under-contacts">
               <span class="under-contacts__subtext">или перезвоните нам сами</span>
-              <span class="under-contacts__phone">+7 (495) 42-251-31</span>
+              <a href="tel: +74954225131" class="under__phone"><span class="under-contacts__phone">+7 (495) 42-251-31</span></a>
             </div>
           </div>
           </div>
@@ -134,42 +134,42 @@
             <div class="card__image"><img src="img/price/photo-1.jpg" alt="photo-1"></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
-              <a href="#" class="card__link">Узнать цены</a>
+              <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             </div>
           </div>
           <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
             <div class="card__image"><img src="img/price/photo-2.jpg" alt="photo-2"></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт комнат и квартир</h4>
-              <a href="#" class="card__link">Узнать цены</a>
+              <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             </div>
           </div>
           <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
             <div class="card__image"><img src="img/price/photo-3.jpg" alt="photo-3"></div>
             <div class="card__text">
               <h4 class="card__title">Отделка офисных помещений</h4>
-              <a href="#" class="card__link">Узнать цены</a>
+              <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             </div>
           </div>
           <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
             <div class="card__image"><img src="img/price/photo-4.jpg" alt="photo-1"></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт в новостройках</h4>
-              <a href="#" class="card__link">Узнать цены</a>
+              <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             </div>
           </div>
           <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
             <div class="card__image"><img src="img/price/photo-5.jpg" alt="photo-5"></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт кухонь</h4>
-              <a href="#" class="card__link">Узнать цены</a>
+              <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             </div>
           </div>
           <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
             <div class="card__image"><img src="img/price/photo-6.jpg" alt="photo-6"></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт дач и коттеджей</h4>
-              <a href="#" class="card__link">Узнать цены</a>
+              <a href="javascript:void(0)" class="card__link">Узнать цены</a>
             </div>
           </div>
         </div>
@@ -346,7 +346,7 @@
 
   </main>
 
-  <footer class="footer section">
+  <footer class="footer">
     <div class="map" id="map">
       <script></script>
     </div>
@@ -368,7 +368,7 @@
             <li class="contacts-list__item">
               <span class="contacts-list__icon"><img src="img/footer/phone-call-button.png" alt="icon_3"></span>
               <span class="contacts-list__text">Телефон: <br>
-              <a href="tel:+7(495)42-251-31"><span class="bold">+ 7 (495) 42-251-31</span></a></span>
+              <a href="tel:+7(495)42-251-31" class="footer__phone"><span class="bold">+ 7 (495) 42-251-31</span></a></span>
             </li>
           </ul>
         </div>
@@ -384,18 +384,25 @@
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
       <h4 class="modal-dialog__title">
-        Всплывающее окно
+        Спасибо, мы вам перезвоним!
       </h4>
     </div>
-    <!-- /.modal-dialog -->
   </div>
-  <!-- /.modal -->
+
+  <div class="modal" id="modal-2">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close-2">&times;</button>
+      <h4 class="modal-dialog__title">
+        Спасибо, мы вам перезвоним!
+      </h4>
+    </div>
+  </div>
 
   <div class="box"></div>
 
-  <script src="js/main.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/modul.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>

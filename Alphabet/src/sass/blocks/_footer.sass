@@ -1,5 +1,9 @@
 .footer
+	padding-top: 90px
 	position: relative
+	&__phone
+		text-decoration: none
+		color: black
 .map
 	width: 50%
 	height: 100%
@@ -42,9 +46,8 @@
 	margin-top: -5px
 	margin-bottom: 32px
 
-@media (max-width: 320px)
+@media (max-width: 768px)
 	footer
-		margin-top: 51px
 		display: flex
 		flex-direction: column
 	.map
@@ -57,10 +60,25 @@
 		height: 665px
 	.contacts
 		flex-basis: 100%
+@media (min-width: 321px) and (max-width: 768px)
+	.contacts
 		padding-left: 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__title
+			text-align: center
+@media (max-width: 320px)
+	.footer
+		margin-top: 51px
+		padding-top: 0
 		&-block
 			margin-left: -9px
 			margin-bottom: 20px
+	.contacts
+		padding-left: 0
+		&-block
+			margin-bottom: 19px
 		&__title
 			font-size: 18px
 			line-height: 22px

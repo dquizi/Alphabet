@@ -1,11 +1,13 @@
 /* Инициализируем библиотек WOW */
 new WOW().init();
 /* Валидация формы секции offer*/
+var modal = $('#modal');
+
 $('#offer-form').validate({
 	rules: {
 		username: {
 			required: true,
-			minlength: 2,
+			minlength: 3,
 			maxlength: 15
 		},
 		phone: {
@@ -14,10 +16,14 @@ $('#offer-form').validate({
 	},
 	errorClass: "invalid-1",
 	errorElement: "div",
+	submitHandler: function (form) {
+		modal.addClass('modal_active');
+		setTimeout(() => closeModal(), 5000)
+	},
 	messages: {
 		username: {
-			minlength: jQuery.validator.format("Осталось символов: {0}"),
-			maxlength: jQuery.validator.format("Имя слишком длинное. Введите не более 15 символов")
+			minlength: jQuery.validator.format("Не менее {0} символов"),
+			maxlength: jQuery.validator.format("Введите не более 15 символов")
 		},
 	}
 })
@@ -27,7 +33,7 @@ $('#brif-form').validate({
 	rules: {
 		username: {
 			required: true,
-			minlength: 2,
+			minlength: 3,
 			maxlength: 15
 		},
 		phone: {
@@ -40,9 +46,13 @@ $('#brif-form').validate({
 	},
 	errorClass: "invalid-2",
 	errorElement: "div",
+	submitHandler: function (form) {
+		modal.addClass('modal_active');
+		setTimeout(() => closeModal(), 5000)
+	},
 	messages: {
 		username: {
-			minlength: jQuery.validator.format("Осталось символов: {0}"),
+			minlength: jQuery.validator.format("Не менее {0} символов"),
 			maxlength: jQuery.validator.format("Имя слишком длинное. Введите не более 15 символов")
 		},
 	}
@@ -67,10 +77,10 @@ $(document).ready(function () {
 			0: {
 				items: 1
 			},
-			480: {
+			768: {
 				items: 2
 			},
-			768: {
+			1200: {
 				items: 3
 			},
 		}

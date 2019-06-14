@@ -40,3 +40,9 @@ gulp.task('tinypng', function (done) {
 		.pipe(gulp.dest('dist/img/'));
 		done();
 });
+
+function js() {
+	return gulp.src('./src/js/*.js')
+	.pipe(gulp.dest('./dist/js'))
+}
+gulp.task('js', js);

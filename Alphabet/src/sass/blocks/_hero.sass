@@ -1,16 +1,15 @@
 .hero
 	padding-top: 46px
 	background-color: $secondary
-	margin-bottom: 1px
+	padding-bottom: 44px
 	&-block
 		display: flex
+		justify-content: space-between
 	&-image
-		display: flex
-		justify-content: flex-end
-		margin-right: -38px
 		margin-bottom: 6px
+		flex-basis: 50%
 	&-text
-		flex-basis: 51%
+		flex-basis: 50%
 		padding-right: 55px
 		&__title
 			+bold
@@ -49,18 +48,32 @@
 			line-height: 24px
 			&:nth-child(3)
 				margin-bottom: -2px
+@media (max-width: 1250px)
+	.hero
+		&-text
+			&__subtitle
+				max-width: 250px
 @media (max-width: 1200px)
 	.hero
-		&-block
-			flex-direction: column
 		&-list
 			margin-bottom: 44px
 		&-text
 			padding-right: 10px
+@media (min-width: 769px) and (max-width: 900px)
+	.hero
+		&-text
+			margin-left: 10px
+			padding-right: 0
+			&__title
+				font-size: 30px
+				line-height: 45px
+				max-width: 250px
 @media (max-width: 768px)
 	.hero
+		&-block
+			flex-direction: column
 		&-image
-			margin-top: 1px
+			display: block
 		&-text
 			&__title
 				font-size: 24px
@@ -81,6 +94,7 @@
 		padding: 9px 0
 		&-block
 			flex-direction: column
+			margin-bottom: 6px
 		&-text
 			&__title
 				line-height: 1.2
